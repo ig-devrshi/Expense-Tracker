@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <section class="upper_box">
+                <div class="balance" >
+                    <h1>Expense Tracker</h1>
+                    <h3 id="netbalance">₹0</h3>
+                    <h3>Your Balance</h3>
+                </div>
+            </section>
+
+
+            <div class="transaction_container">
+                <h3>Transactions</h2>
+                    <hr />
+            </div>
+            <div class="transactions" id="transactions">
+                <div class="transaction">
+                    <div class="left">
+                        <p>Salary</p>
+                        <p>+ ₹25000</p>
+                    </div>
+                    <div class="status credit">C</div>
+                </div>
+
+                <div class="transaction">
+                    <div class="left">
+                        <p>Shopping</p>
+                        <p>+ ₹2586</p>
+                    </div>
+                    <div class="status debit">D</div>
+                </div>
+            </div>
+            <section>
+                <div class="transaction_form">
+                    <h3>Add Transaction</h3>
+                    <form id="transactionForm">
+                        <div class="inputs">
+                            <div class="form_control">
+                                <label for="text">Text</label>
+                                <input type="text" name="text" placeholder="Enter Text" id="text" required/>
+                            </div>
+                            <div class="form_control">
+                                <label for="amount">Amount</label>
+                                <input type="number" name="amount" placeholder="Enter Amount" id="text" required/>
+                            </div>
+                        </div>
+                        <div class="button_container">
+                            <button type="submit" id="earnBtn">
+                                <p id="earning">₹0</p>
+                                <p>Earnings</p>
+                            </button>
+                            <button type="submit" id="expBtn">
+                                <p id="expense">₹0</p>
+                                <p>Expense</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
