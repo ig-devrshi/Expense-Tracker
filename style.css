@@ -240,8 +240,15 @@ form input:focus {
     opacity: 0.8;
 }
 
-@media(max-width:450px) {
+@media(max-width:500px) {
     .box {
         width: 95%;
+    }
+    .button{
+        top: 50%;
+        left: 91.5%;
+    }
+    .transactions{
+        width: 93%;
     }
 }
