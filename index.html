@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <section class="upper_box">
                 <div class="balance">
                     <h1>Expense Tracker</h1>
-                    <h3 id="netbalance">₹0</h3>
+                    <h2 id="netbalance">₹0</h2>
                     <h3>Your Balance</h3>
                 </div>
             </section>
@@ -29,21 +30,7 @@
                     <hr />
             </div>
             <div class="transactions" id="transactions">
-                <div class="transaction">
-                    <div class="left">
-                        <p>Salary</p>
-                        <p>+ ₹25000</p>
-                    </div>
-                    <div class="status credit">C</div>
-                </div>
-
-                <div class="transaction">
-                    <div class="left">
-                        <p>Shopping</p>
-                        <p>+ ₹2586</p>
-                    </div>
-                    <div class="status debit">D</div>
-                </div>
+                
             </div>
             <section>
                 <div class="transaction_form">
@@ -58,6 +45,10 @@
                             <div class="form_control">
                                 <label for="amount">Amount</label>
                                 <input type="number" name="amount" placeholder="Enter Amount" id="text" required />
+                            </div>
+                            <div class="form_control">
+                                <label for="date">Date</label>
+                                <input type="date" name="date" id="date" required />
                             </div>
                         </div>
                         <div class="button_container">
